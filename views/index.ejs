@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= title %>
+  </title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Sherubtse College Online Voting System</h1>
+    <div class="header-right">
+      <span class="notification" title="Notifications">🔔</span>
+      <div class="user-account">
+        <span class="user-name">👤 Account ▾</span>
+        <ul class="account-dropdown">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="logo">Sherubtse</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="menu" id="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li>
+        <a href="election.html">Elections ▾</a>
+        <ul class="dropdown">
+          <li><a href="#">Ongoing Elections</a></li>
+          <li><a href="#">Upcoming Elections</a></li>
+          <li><a href="#">Past Elections</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="candidate.html">Candidates ▾</a>
+        <ul class="dropdown">
+          <li><a href="#fina">FINA Candidates</a></li>
+          <li><a href="#resident">Resident Leaders</a></li>
+          <li><a href="#unit">Unit Leaders</a></li>
+        </ul>
+      </li>
+      <li><a href="guideline.html">Guidelines</a></li>
+      <li><a href="result.html">Results</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="welcome">
+      <h2>Welcome to Sherubtse College Online Voting System</h2>
+      <p>This platform allows students to cast their votes securely and fairly for college elections.
+        Navigate through the menu to view candidates, cast your vote, and check election results.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Sherubtse College | All Rights Reserved
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('show');
+    }
+  </script>
+  <main>
+    <div class="auth-buttons">
+      <a href="/auth/signup" class="btn">Signup</a>
+      <a href="/auth/login" class="btn">Login</a>
+    </div>
+  </main>
+  <script src="/js/script.js"></script>
+</body>
+
+</html
